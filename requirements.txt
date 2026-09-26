@@ -1,0 +1,27 @@
+# Install into ComfyUI's OWN Python environment, not your system Python.
+#   Portable/Windows build:  ComfyUI\python_embeded\python.exe -m pip install -r requirements.txt
+#   venv / manual install:   /path/to/ComfyUI/venv/bin/pip install -r requirements.txt
+#   conda:                   conda activate <your-comfyui-env> && pip install -r requirements.txt
+#
+# torch is deliberately NOT listed here. ComfyUI ships a torch build matched
+# to your specific GPU/CUDA (or CPU/MPS) setup; installing a generic torch
+# from this file risks overwriting that match and breaking ComfyUI itself.
+# If `import torch` fails inside ComfyUI, fix that via ComfyUI's own install
+# instructions, not this file.
+#
+# Qwen-Image support in diffusers is very recent. As of writing, Qwen's own
+# model card (https://huggingface.co/Qwen/Qwen-Image) recommends installing
+# diffusers straight from GitHub rather than PyPI to make sure you have it --
+# a plain `pip install diffusers` can land on a release that predates it,
+# which is a likely reason the Loader node errors with an ImportError when
+# you actually run the graph (this does NOT stop the nodes from appearing in
+# ComfyUI's menu, though -- that's a separate issue, see the README).
+diffusers @ git+https://github.com/huggingface/diffusers
+
+transformers>=4.46.0
+accelerate>=0.34.0
+safetensors>=0.4.3
+huggingface_hub>=0.25.0
+sentencepiece>=0.2.0
+Pillow>=10.0.0
+numpy>=1.24.0

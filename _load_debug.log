@@ -1,0 +1,12 @@
+[QwenImageNodes 20:43:40] __init__.py started executing
+[QwenImageNodes 20:43:40] this file's location: C:\Users\vizio\AppData\Local\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI\custom_nodes\qwen_image_nodes\__init__.py
+[QwenImageNodes 20:43:40] python executable in use: C:\Users\vizio\AppData\Local\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI\.venv\Scripts\python.exe
+[QwenImageNodes 20:43:40] python version: 3.13.12
+[QwenImageNodes 20:43:40] torch import OK (version 2.12.1+cu130)
+[QwenImageNodes 20:43:40] comfy.model_management import OK
+[QwenImageNodes 20:43:40] diffusers import OK (version 0.40.0)
+[QwenImageNodes 20:43:40] loaded qwen_image_loader.py OK -> registered ['QwenImageLoader']
+[QwenImageNodes 20:43:40] loaded qwen_image_text_encode.py OK -> registered ['QwenImageTextEncode']
+[QwenImageNodes 20:43:40] loaded qwen_image_latent_size.py OK -> registered ['QwenImageLatentSize']
+[QwenImageNodes 20:43:40] loaded qwen_image_sampler.py OK -> registered ['QwenImageSampler']
+[QwenImageNodes 20:43:40] TOTAL: 4/4 node(s) registered -> ['QwenImageLatentSize', 'QwenImageLoader', 'QwenImageSampler', 'QwenImageTextEncode']
